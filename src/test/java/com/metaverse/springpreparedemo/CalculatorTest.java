@@ -9,20 +9,34 @@ class CalculatorTest {
     @Test
     @DisplayName("더하기 테스트")
     void test1() {
+        // given
         Calculator calculator = new Calculator();
-        Double result = calculator.operate(8, "+", 2);
-        System.out.println("test1 result:" +result);
+        int num1 = 8;
+        int num2 = 2;
+        double result;
 
+        // when
+        result = calculator.operate(8, "+", 2);
+
+        // then
+        System.out.println("test1 result:" +result);
         Assertions.assertEquals(10, result);
     }
 
     @Test
     @DisplayName("나누기 테스트")
     void test2() {
+        // given
         Calculator calculator = new Calculator();
-        Double result = calculator.operate(8, "/", 2);
-        System.out.println("test2 result = " + result);
+        int num1 = 8;
+        int num2 = 2;
+        double result;
 
+        // when
+        result = calculator.operate(8, "/", 2);
+
+        // then
+        System.out.println("test2 result = " + result);
         Assertions.assertEquals(4, result);
     }
 }
