@@ -4,9 +4,9 @@ import lombok.*;
 
 @Getter
 @Setter
-@NoArgsConstructor
+@RequiredArgsConstructor
 @AllArgsConstructor
 public class Memo {
-    private String username;
+    private final String username;
     private String contents;
 }
